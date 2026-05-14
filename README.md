@@ -149,24 +149,11 @@ Runs locally. Parsing, scoring, stitching, export all client-side. Some OCR/mode
 
 ## License
 
-```
-RDPuzzle License
+RDPuzzle is available free of charge for personal, educational, academic, and non-commercial research use.
 
-Copyright (c) 2026 Daniel Ben Zano
+Commercial use, including use by companies, consultancies, MDR/IR providers, internal corporate security teams, or commercial forensic services, requires a separate commercial license.
 
-Permission is granted to use, copy, modify, and distribute this software
-for personal, educational, and research purposes only.
-
-Commercial use is prohibited without explicit written permission from the
-copyright holder. Commercial use includes but is not limited to: selling
-this software, distributing it as part of a paid product or service,
-using it as part of a business operation, or providing it as a service
-to paying customers.
-
-This software is provided "as is", without warranty of any kind.
-
-The author retains all rights not explicitly granted.
-```
+For commercial licensing, contact: mrdanielbenzano@gmail.com
 
 ---
 
