@@ -115,11 +115,11 @@ input[type=file]{display:none}
 /* ── Button glow (first-upload hint) ──────────────────────────── */
 @keyframes btnGlow {
   0%{box-shadow:0 0 0 0 rgba(88,166,255,0)}
-  15%{box-shadow:0 0 12px 4px rgba(88,166,255,.6)}
-  30%{box-shadow:0 0 12px 4px rgba(88,166,255,.6)}
+  5%{box-shadow:0 0 14px 5px rgba(88,166,255,.7)}
+  15%{box-shadow:0 0 14px 5px rgba(88,166,255,.7)}
   100%{box-shadow:0 0 0 0 rgba(88,166,255,0)}
 }
-.btn-glow{animation:btnGlow 1.2s ease-out}
+.btn-glow{animation:btnGlow 5s ease-out}
 
 /* ── Main layout ───────────────────────────────────────────────── */
 #main{display:flex;flex:1;overflow:hidden}
@@ -4840,7 +4840,7 @@ async function handleFiles(fileList) {
     glowBtn.classList.remove('btn-glow');
     void glowBtn.offsetWidth; // reflow to restart animation
     glowBtn.classList.add('btn-glow');
-    setTimeout(() => glowBtn.classList.remove('btn-glow'), 1500);
+    setTimeout(() => glowBtn.classList.remove('btn-glow'), 5500);
   }
   renderTileList(); renderGrid(); updateStats();
 
