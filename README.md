@@ -2,9 +2,11 @@
 
 # RDPuzzle
 
-Neural network RDP cache reconstruction tool. Loads 64x64 bitmap tiles, scores likely neighbors using HSV, Pearson correlation, and a self-trained neural network (EdgeMatch) that runs locally in the page, then semi-automatically stitches them into larger images.
+Reconstructs RDP bitmap cache fragments into readable screenshots using neural edge-matching, auto-stitching, and OCR — all locally in the browser.
 
-Has multi-tab workspaces, auto-stitching, low-information tile filtering, OCR, undo/redo, session save/load.
+Loads 64x64 bitmap tiles, scores likely neighbors using HSV, Pearson correlation, and a self-trained neural network (EdgeMatch) that runs in the page, then semi-automatically stitches them into larger images. Has multi-tab workspaces, auto-stitching, low-information tile filtering, OCR, undo/redo, session save/load.
+
+**[Use it directly →](https://bzdaniel.github.io/RDPuzzle/RDPuzzle.html)**
 
 ---
 
