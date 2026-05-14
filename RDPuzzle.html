@@ -112,6 +112,15 @@ input[type=file]{display:none}
 #vit-mode-box .mode-cancel button{font-size:11px;color:var(--text2);background:none;border:none;cursor:pointer}
 #vit-mode-box .mode-cancel button:hover{color:var(--text)}
 
+/* ── Button glow (first-upload hint) ──────────────────────────── */
+@keyframes btnGlow {
+  0%{box-shadow:0 0 0 0 rgba(88,166,255,0)}
+  15%{box-shadow:0 0 12px 4px rgba(88,166,255,.6)}
+  30%{box-shadow:0 0 12px 4px rgba(88,166,255,.6)}
+  100%{box-shadow:0 0 0 0 rgba(88,166,255,0)}
+}
+.btn-glow{animation:btnGlow 1.2s ease-out}
+
 /* ── Main layout ───────────────────────────────────────────────── */
 #main{display:flex;flex:1;overflow:hidden}
 #main.hidden{display:none}
@@ -4825,6 +4834,14 @@ async function handleFiles(fileList) {
   await precomputeStaticTileFeaturesChunked({silent:true});
   scheduleScoringWorkerSync();
   showMainUI();
+  // Briefly glow the Enable AI button to catch the user's eye
+  const glowBtn = document.getElementById('btn-model');
+  if (glowBtn && !vitReady) {
+    glowBtn.classList.remove('btn-glow');
+    void glowBtn.offsetWidth; // reflow to restart animation
+    glowBtn.classList.add('btn-glow');
+    setTimeout(() => glowBtn.classList.remove('btn-glow'), 1500);
+  }
   renderTileList(); renderGrid(); updateStats();
 
   // Run OCR by default after loading, with progress visible.
