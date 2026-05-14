@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use RDPuzzle in research, training, or publications, please cite it as below."
+title: "RDPuzzle: Neural-Assisted RDP Bitmap Cache Reconstruction"
+authors:
+  - family-name: "Ben Zano"
+    given-name: "Daniel"
+repository-code: "https://github.com/BZDaniel/RDPuzzle"
+url: "https://bzdaniel.github.io/RDPuzzle/"
+license: "SEE LICENSE FILE"
+version: "0.1.0"
+date-released: "2026-05-14"
