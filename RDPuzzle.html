@@ -2083,7 +2083,7 @@ function looksLikeHtmlOrJson(buf) {
 
 async function fetchOnnxBytesFrom(url, label, init = {}) {
   const res = await fetch(url, {
-    cache: 'force-cache',
+    cache: 'no-cache',
     redirect: 'follow',
     credentials: 'omit',
     ...init
