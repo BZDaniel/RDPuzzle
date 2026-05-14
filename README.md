@@ -2,7 +2,7 @@
 
 # RDPuzzle
 
-Reconstructs RDP bitmap cache fragments into readable screenshots using neural edge-matching, auto-stitching, and OCR — all locally in the browser.
+Reconstructs RDP bitmap cache fragments into readable screenshots using neural edge-matching, auto-stitching, and OCR - all locally in the browser.
 
 Loads 64x64 bitmap tiles, scores likely neighbors using HSV, Pearson correlation, and a self-trained neural network (EdgeMatch) that runs in the page, then semi-automatically stitches them into larger images. Has multi-tab workspaces, auto-stitching, low-information tile filtering, OCR, undo/redo, session save/load.
 
