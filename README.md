@@ -6,7 +6,10 @@ Reconstructs RDP bitmap cache fragments into readable screenshots using neural e
 
 Loads 64x64 bitmap tiles, scores likely neighbors using HSV, Pearson correlation, and a self-trained neural network (EdgeMatch) that runs in the page, then semi-automatically stitches them into larger images. Has multi-tab workspaces, auto-stitching, low-information tile filtering, OCR, undo/redo, session save/load.
 
-**[Use it directly →](https://bzdaniel.github.io/RDPuzzle/RDPuzzle.html)**
+**[Use it directly ](https://bzdaniel.github.io/RDPuzzle/RDPuzzle.html)**
+
+Demo:
+<video src="samples/demo.mp4" controls width="800"></video>
 
 ---
 
