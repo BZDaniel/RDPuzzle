@@ -9,7 +9,7 @@ Loads 64x64 bitmap tiles, scores likely neighbors using HSV, Pearson correlation
 **[Use it directly ](https://bzdaniel.github.io/RDPuzzle/RDPuzzle.html)**
 
 Demo:
-<video src="https://raw.githubusercontent.com/BZDaniel/RDPuzzle/main/samples/demo.mp4" controls width="800"></video>
+<video src="https://github.com/BZDaniel/RDPuzzle/raw/main/samples/demo.mp4" controls width="800"></video>
 
 ---
 
