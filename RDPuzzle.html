@@ -346,7 +346,7 @@ td.selected{background:rgba(100,200,255,0.2);position:relative}
   <span class="stat">Grid: <span id="stat-grid">0×0</span></span>
   <div id="model-status">
     <span class="dot off" id="model-dot"></span>
-    <span id="model-label" style="font-size:11px;color:var(--text2)">AI off</span>
+    <span id="model-label" style="font-size:11px;color:var(--red)">AI off</span>
     <button class="btn-secondary btn-sm" id="btn-model" onclick="toggleModel()">Enable AI</button>
   </div>
 </div>
@@ -2005,10 +2005,10 @@ const tileViTEdges = new Map();  // tile.id → {left, right, top, bottom} faith
 function setModelStatus(state, label) {
   const d=document.getElementById('model-dot'),l=document.getElementById('model-label'),b=document.getElementById('btn-model');
   d.className=`dot ${state}`; l.textContent=label;
-  if(state==='ready'){b.textContent='Disable AI';b.className='btn-danger btn-sm';b.disabled=false;}
-  else if(state==='off'){b.textContent='Enable AI';b.className='btn-secondary btn-sm';b.disabled=false;}
-  else if(state==='partial'){b.textContent='Disable AI';b.className='btn-danger btn-sm';b.disabled=false;}
-  else{b.textContent='Loading…';b.className='btn-secondary btn-sm';b.disabled=true;}
+  if(state==='ready'){b.textContent='Disable AI';b.className='btn-danger btn-sm';b.disabled=false;l.style.color='var(--green)';}
+  else if(state==='off'){b.textContent='Enable AI';b.className='btn-secondary btn-sm';b.disabled=false;l.style.color='var(--red)';}
+  else if(state==='partial'){b.textContent='Disable AI';b.className='btn-danger btn-sm';b.disabled=false;l.style.color='var(--orange)';}
+  else{b.textContent='Loading…';b.className='btn-secondary btn-sm';b.disabled=true;l.style.color='var(--text2)';}
 }
 
 // ── 5a2: Edge-strip HSV histogram (128-bin, per side) ───────────
